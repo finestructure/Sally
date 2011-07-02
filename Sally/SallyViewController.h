@@ -21,4 +21,7 @@
 @property (nonatomic, strong) IBOutlet UITextField *auf;
 @property (nonatomic, strong) IBOutlet UITextField *ab;
 
+- (IBAction)aufschlagChanged:(id)sender;
+- (IBAction)abschlagChanged:(id)sender;
+
 @end

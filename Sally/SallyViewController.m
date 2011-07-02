@@ -24,8 +24,8 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  [super viewDidLoad];
+  self.ek.text = @"1000";
 }
 
 - (void)viewDidUnload
@@ -63,6 +63,16 @@
 {
     // Return YES for supported orientations
   return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)aufschlagChanged:(id)sender {
+  UISlider *slider = (UISlider *)sender;
+  self.auf.text = [NSString stringWithFormat:@"%.0f", slider.value*100];
+}
+
+- (IBAction)abschlagChanged:(id)sender {
+  UISlider *slider = (UISlider *)sender;
+  self.ab.text = [NSString stringWithFormat:@"%.0f", slider.value*100];
 }
 
 @end
