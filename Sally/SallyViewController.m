@@ -100,20 +100,38 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 - (IBAction)aufschlagChanged:(id)sender {
   float auf = self.aufSlider.value;
   self.auf.text = [formatter stringFromNumber:[NSNumber numberWithFloat:auf]];
+  
   float ek = [[formatter numberFromString:self.ek.text] floatValue];
-  float vk = ek * auf;
+  float vk = [[formatter numberFromString:self.vk.text] floatValue];
+
+  if (! [self isLocked:self.vkLock]) {
+    vk = ek * auf;
+    self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:vk]];
+  } else {
+    ek = vk / auf;
+    self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ek]];
+  }
+  
   float ab = 1 - ek/vk;
-  self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:vk]];
   self.ab.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ab]];
 }
 
 - (IBAction)abschlagChanged:(id)sender {
   float ab = self.abSlider.value;
   self.ab.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ab]];
-  float vk = [[formatter numberFromString:self.vk.text] floatValue];
+
   float auf = 1/(1 - ab);
-  float ek = vk / auf;
-  self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ek]];
+  float ek = [[formatter numberFromString:self.ek.text] floatValue];
+  float vk = [[formatter numberFromString:self.vk.text] floatValue];
+
+  if (! [self isLocked:self.ekLock]) {
+    ek = vk / auf;
+    self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ek]];
+  } else {
+    vk = ek * auf;
+    self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:vk]];
+  }
+  
   self.auf.text = [formatter stringFromNumber:[NSNumber numberWithFloat:auf]];
 }
 

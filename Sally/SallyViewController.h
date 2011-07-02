@@ -40,4 +40,6 @@
 - (IBAction)ekLockTapped:(id)sender;
 - (IBAction)vkLockTapped:(id)sender;
 
+- (BOOL)isLocked:(UIView *)sender;
+
 @end
