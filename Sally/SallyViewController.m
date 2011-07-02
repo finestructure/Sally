@@ -200,6 +200,12 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
     [self ekChanged:textField];
   } else if (textField == self.vk) {
     [self vkChanged:textField];
+  } else if (textField == self.auf) {
+    self.aufSlider.value = [[formatter numberFromString:textField.text] floatValue];
+    [self aufschlagChanged:textField];
+  } else if (textField == self.ab) {
+    self.abSlider.value = [[formatter numberFromString:textField.text] floatValue];
+    [self abschlagChanged:textField];
   }
 }
 
