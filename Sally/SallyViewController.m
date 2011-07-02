@@ -9,10 +9,12 @@
 #import "SallyViewController.h"
 
 @implementation SallyViewController
-@synthesize ek;
-@synthesize vk;
-@synthesize auf;
-@synthesize ab;
+@synthesize ek = _ek;
+@synthesize vk = _vk;
+@synthesize auf = _auf;
+@synthesize ab = _ab;
+@synthesize aufSlider = _aufSlider;
+@synthesize abSlider = _abSlider;
 
 - (void)didReceiveMemoryWarning
 {
@@ -20,12 +22,18 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  self.ek.text = @"1000";
+  self.ek.text = @"1000.00";
+  self.vk.text = @"1000.00";
+  self.auf.text = @"2.00";
+  self.aufSlider.value = 2;
+  self.ab.text = @"0.50";
+  self.abSlider.value = 0.5;
 }
 
 - (void)viewDidUnload
@@ -34,9 +42,9 @@
   [self setVk:nil];
   [self setAuf:nil];
   [self setAb:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+  [self setAufSlider:nil];
+  [self setAbSlider:nil];
+  [super viewDidUnload];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -66,13 +74,37 @@
 }
 
 - (IBAction)aufschlagChanged:(id)sender {
-  UISlider *slider = (UISlider *)sender;
-  self.auf.text = [NSString stringWithFormat:@"%.0f", slider.value*100];
+  float auf = self.aufSlider.value;
+  self.auf.text = [[NSNumber numberWithFloat:auf] stringValue];
+  float ek = [self.ek.text floatValue];
+  float vk = ek * auf;
+  float ab = 1 - ek/vk;
+  self.vk.text = [[NSNumber numberWithFloat:vk] stringValue];
+  self.ab.text = [[NSNumber numberWithFloat:ab] stringValue];
 }
 
 - (IBAction)abschlagChanged:(id)sender {
-  UISlider *slider = (UISlider *)sender;
-  self.ab.text = [NSString stringWithFormat:@"%.0f", slider.value*100];
+  float ab = self.abSlider.value;
+  self.ab.text = [[NSNumber numberWithFloat:ab] stringValue];
+  float vk = [self.vk.text floatValue];
+  float auf = 1/(1 - ab);
+  float ek = vk / auf;
+  self.ek.text = [[NSNumber numberWithFloat:ek] stringValue];
+  self.auf.text = [[NSNumber numberWithFloat:auf] stringValue];
+}
+
+- (IBAction)ekChanged:(id)sender {
+  float ek = [self.ek.text floatValue];
+  float auf = [self.auf.text floatValue];
+  float vk = ek * auf;
+  self.vk.text = [[NSNumber numberWithFloat:vk] stringValue];
+}
+
+- (IBAction)vkChanged:(id)sender {
+  float auf = [self.auf.text floatValue];
+  float vk = [self.vk.text floatValue];
+  float ek = vk / auf;
+  self.ek.text = [[NSNumber numberWithFloat:ek] stringValue];
 }
 
 @end

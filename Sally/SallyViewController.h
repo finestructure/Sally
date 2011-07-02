@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface SallyViewController : UIViewController {
-  UITextField *ek;
-  UITextField *vk;
-  UITextField *auf;
-  UITextField *ab;
+  UITextField *_ek;
+  UITextField *_vk;
+  UITextField *_auf;
+  UITextField *_ab;
+  UISlider *_aufSlider;
+  UISlider *_abSlider;
 }
 
 
@@ -20,8 +22,12 @@
 @property (nonatomic, strong) IBOutlet UITextField *vk;
 @property (nonatomic, strong) IBOutlet UITextField *auf;
 @property (nonatomic, strong) IBOutlet UITextField *ab;
+@property (nonatomic, strong) IBOutlet UISlider *aufSlider;
+@property (nonatomic, strong) IBOutlet UISlider *abSlider;
 
 - (IBAction)aufschlagChanged:(id)sender;
 - (IBAction)abschlagChanged:(id)sender;
+- (IBAction)ekChanged:(id)sender;
+- (IBAction)vkChanged:(id)sender;
 
 @end
