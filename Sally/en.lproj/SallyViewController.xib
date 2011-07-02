@@ -48,7 +48,7 @@
 						<string key="NSFrame">{{363, 130}, {97, 31}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="155199088"/>
+						<reference key="NSNextKeyView" ref="846647834"/>
 						<string key="NSReuseIdentifierKey">_NS:300</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -195,6 +195,7 @@
 						<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
 						<float key="IBUIMinimumFontSize">17</float>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
+							<int key="IBUIKeyboardType">2</int>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="275670538"/>
@@ -237,6 +238,7 @@
 						<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
 						<float key="IBUIMinimumFontSize">17</float>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
+							<int key="IBUIKeyboardType">2</int>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="275670538"/>
@@ -258,7 +260,7 @@
 							<string key="NSResourceName">arrow.png</string>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="155199088">
+					<object class="IBUIImageView" id="846647834">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{120, 176}, {240, 35}}</string>
@@ -457,7 +459,7 @@
 							<reference ref="545896402"/>
 							<reference ref="489386740"/>
 							<reference ref="1021399110"/>
-							<reference ref="155199088"/>
+							<reference ref="846647834"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -508,7 +510,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">18</int>
-						<reference key="object" ref="155199088"/>
+						<reference key="object" ref="846647834"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</object>
