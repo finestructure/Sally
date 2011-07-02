@@ -92,7 +92,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 - (IBAction)aufschlagChanged:(id)sender {
   float auf = self.aufSlider.value;
   self.auf.text = [formatter stringFromNumber:[NSNumber numberWithFloat:auf]];
-  float ek = [self.ek.text floatValue];
+  float ek = [[formatter numberFromString:self.ek.text] floatValue];
   float vk = ek * auf;
   float ab = 1 - ek/vk;
   self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:vk]];
@@ -102,7 +102,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 - (IBAction)abschlagChanged:(id)sender {
   float ab = self.abSlider.value;
   self.ab.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ab]];
-  float vk = [self.vk.text floatValue];
+  float vk = [[formatter numberFromString:self.vk.text] floatValue];
   float auf = 1/(1 - ab);
   float ek = vk / auf;
   self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ek]];
@@ -110,15 +110,15 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 }
 
 - (IBAction)ekChanged:(id)sender {
-  float ek = [self.ek.text floatValue];
-  float auf = [self.auf.text floatValue];
+  float ek = [[formatter numberFromString:self.ek.text] floatValue];
+  float auf = [[formatter numberFromString:self.auf.text] floatValue];
   float vk = ek * auf;
   self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:vk]];
 }
 
 - (IBAction)vkChanged:(id)sender {
-  float auf = [self.auf.text floatValue];
-  float vk = [self.vk.text floatValue];
+  float auf = [[formatter numberFromString:self.auf.text] floatValue];
+  float vk = [[formatter numberFromString:self.vk.text] floatValue];
   float ek = vk / auf;
   self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ek]];
 }
@@ -207,6 +207,9 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
     self.abSlider.value = [[formatter numberFromString:textField.text] floatValue];
     [self abschlagChanged:textField];
   }
+  
+  // reformat value
+  textField.text = [formatter stringFromNumber:[formatter numberFromString:textField.text]];
 }
 
 
