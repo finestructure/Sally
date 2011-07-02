@@ -23,6 +23,8 @@
 		5A66A35713BF4E6900DB7161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A66A35513BF4E6900DB7161 /* InfoPlist.strings */; };
 		5A66A35913BF4E6900DB7161 /* SallyTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5A66A35813BF4E6900DB7161 /* SallyTests.h */; };
 		5A66A35B13BF4E6900DB7161 /* SallyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A66A35A13BF4E6900DB7161 /* SallyTests.m */; };
+		5A66A36513BF501C00DB7161 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A66A36413BF501C00DB7161 /* arrow.png */; };
+		5AC94A0013BF50D50083EC1D /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AC949FF13BF50D50083EC1D /* arrow2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,21 +42,23 @@
 		5A66A32C13BF4E6900DB7161 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5A66A32E13BF4E6900DB7161 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A66A33013BF4E6900DB7161 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5A66A33413BF4E6900DB7161 /* Sally-Info.plist */ = {isa = PBXFileReference; path = "Sally-Info.plist"; sourceTree = "<group>"; };
+		5A66A33413BF4E6900DB7161 /* Sally-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sally-Info.plist"; sourceTree = "<group>"; };
 		5A66A33613BF4E6900DB7161 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A66A33813BF4E6900DB7161 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5A66A33A13BF4E6900DB7161 /* Sally-Prefix.pch */ = {isa = PBXFileReference; path = "Sally-Prefix.pch"; sourceTree = "<group>"; };
-		5A66A33B13BF4E6900DB7161 /* SallyAppDelegate.h */ = {isa = PBXFileReference; path = SallyAppDelegate.h; sourceTree = "<group>"; };
+		5A66A33A13BF4E6900DB7161 /* Sally-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sally-Prefix.pch"; sourceTree = "<group>"; };
+		5A66A33B13BF4E6900DB7161 /* SallyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SallyAppDelegate.h; sourceTree = "<group>"; };
 		5A66A33C13BF4E6900DB7161 /* SallyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SallyAppDelegate.m; sourceTree = "<group>"; };
 		5A66A33E13BF4E6900DB7161 /* SallyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SallyViewController.h; sourceTree = "<group>"; };
 		5A66A34013BF4E6900DB7161 /* SallyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SallyViewController.m; sourceTree = "<group>"; };
 		5A66A34313BF4E6900DB7161 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SallyViewController.xib; sourceTree = "<group>"; };
 		5A66A34A13BF4E6900DB7161 /* SallyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SallyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A66A34B13BF4E6900DB7161 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5A66A35413BF4E6900DB7161 /* SallyTests-Info.plist */ = {isa = PBXFileReference; path = "SallyTests-Info.plist"; sourceTree = "<group>"; };
+		5A66A35413BF4E6900DB7161 /* SallyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SallyTests-Info.plist"; sourceTree = "<group>"; };
 		5A66A35613BF4E6900DB7161 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A66A35813BF4E6900DB7161 /* SallyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SallyTests.h; sourceTree = "<group>"; };
 		5A66A35A13BF4E6900DB7161 /* SallyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SallyTests.m; sourceTree = "<group>"; };
+		5A66A36413BF501C00DB7161 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		5AC949FF13BF50D50083EC1D /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 		5A66A33213BF4E6900DB7161 /* Sally */ = {
 			isa = PBXGroup;
 			children = (
+				5AC949FF13BF50D50083EC1D /* arrow2.png */,
+				5A66A36413BF501C00DB7161 /* arrow.png */,
 				5A66A33B13BF4E6900DB7161 /* SallyAppDelegate.h */,
 				5A66A33C13BF4E6900DB7161 /* SallyAppDelegate.m */,
 				5A66A33E13BF4E6900DB7161 /* SallyViewController.h */,
@@ -228,6 +234,8 @@
 				5A66A33713BF4E6900DB7161 /* InfoPlist.strings in Resources */,
 				5A66A33F13BF4E6900DB7161 /* SallyViewController.h in Resources */,
 				5A66A34413BF4E6900DB7161 /* SallyViewController.xib in Resources */,
+				5A66A36513BF501C00DB7161 /* arrow.png in Resources */,
+				5AC94A0013BF50D50083EC1D /* arrow2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +443,7 @@
 				5A66A36013BF4E6900DB7161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A66A36113BF4E6900DB7161 /* Build configuration list for PBXNativeTarget "SallyTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +452,7 @@
 				5A66A36313BF4E6900DB7161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,10 @@
 #import "SallyViewController.h"
 
 @implementation SallyViewController
+@synthesize ek;
+@synthesize vk;
+@synthesize auf;
+@synthesize ab;
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,6 +30,10 @@
 
 - (void)viewDidUnload
 {
+  [self setEk:nil];
+  [self setVk:nil];
+  [self setAuf:nil];
+  [self setAb:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

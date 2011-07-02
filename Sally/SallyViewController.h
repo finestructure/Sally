@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SallyViewController : UIViewController
+@interface SallyViewController : UIViewController {
+  UITextField *ek;
+  UITextField *vk;
+  UITextField *auf;
+  UITextField *ab;
+}
+
+
+@property (nonatomic, strong) IBOutlet UITextField *ek;
+@property (nonatomic, strong) IBOutlet UITextField *vk;
+@property (nonatomic, strong) IBOutlet UITextField *auf;
+@property (nonatomic, strong) IBOutlet UITextField *ab;
 
 @end
