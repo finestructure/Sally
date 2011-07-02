@@ -45,7 +45,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 
   [super viewDidLoad];
   self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:1000]];;
-  self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:1000]];
+  self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:2000]];
   self.auf.text = [formatter stringFromNumber:[NSNumber numberWithFloat:2]];
   self.aufSlider.value = 2;
   self.ab.text = [formatter stringFromNumber:[NSNumber numberWithFloat:0.5]];
@@ -195,6 +195,12 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
   [self.view setFrame:viewFrame];
   
   [UIView commitAnimations];
+  
+  if (textField == self.ek) {
+    [self ekChanged:textField];
+  } else if (textField == self.vk) {
+    [self vkChanged:textField];
+  }
 }
 
 
