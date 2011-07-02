@@ -15,6 +15,8 @@
 @synthesize ab = _ab;
 @synthesize aufSlider = _aufSlider;
 @synthesize abSlider = _abSlider;
+@synthesize ekLock = _ekLock;
+@synthesize vkLock = _vkLock;
 
 static NSNumberFormatter *formatter = nil;
 
@@ -60,6 +62,8 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
   [self setAb:nil];
   [self setAufSlider:nil];
   [self setAbSlider:nil];
+  [self setEkLock:nil];
+  [self setVkLock:nil];
   [super viewDidUnload];
 }
 
@@ -88,6 +92,10 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
     // Return YES for supported orientations
   return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
+
+#pragma mark -
+#pragma mark IB actions
 
 - (IBAction)aufschlagChanged:(id)sender {
   float auf = self.aufSlider.value;
@@ -123,6 +131,51 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
   self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ek]];
 }
 
+
+- (BOOL)isLocked:(UIView *)sender {
+  return sender.alpha == 1;
+}
+
+
+- (void)unlock:(UIView *)sender {
+  sender.alpha = 0.3;
+}
+
+
+- (void)lock:(UIView *)sender {
+  sender.alpha = 1;
+}
+
+
+- (IBAction)ekLockTapped:(id)sender {
+  id otherLock = self.vkLock;
+  
+  if ([self isLocked:sender]) {
+    [self unlock:sender];
+  } else {
+    if ([self isLocked:otherLock]) {
+      [self unlock:otherLock];
+    }
+    [self lock:sender];
+  }
+}
+
+
+- (IBAction)vkLockTapped:(id)sender {
+  id otherLock = self.ekLock;
+  
+  if ([self isLocked:sender]) {
+    [self unlock:sender];
+  } else {
+    if ([self isLocked:otherLock]) {
+      [self unlock:otherLock];
+    }
+    [self lock:sender];
+  }
+}
+
+
+#pragma mark -
 #pragma mark TextField delegate
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {

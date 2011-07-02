@@ -25,6 +25,7 @@
 		5A66A35B13BF4E6900DB7161 /* SallyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A66A35A13BF4E6900DB7161 /* SallyTests.m */; };
 		5A66A36513BF501C00DB7161 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A66A36413BF501C00DB7161 /* arrow.png */; };
 		5AC94A0013BF50D50083EC1D /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AC949FF13BF50D50083EC1D /* arrow2.png */; };
+		5AC94A0313BFA4B10083EC1D /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AC94A0213BFA4B10083EC1D /* lock.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		5A66A35A13BF4E6900DB7161 /* SallyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SallyTests.m; sourceTree = "<group>"; };
 		5A66A36413BF501C00DB7161 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		5AC949FF13BF50D50083EC1D /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
+		5AC94A0213BFA4B10083EC1D /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				5AC949FF13BF50D50083EC1D /* arrow2.png */,
 				5A66A36413BF501C00DB7161 /* arrow.png */,
+				5AC94A0213BFA4B10083EC1D /* lock.png */,
 				5A66A33B13BF4E6900DB7161 /* SallyAppDelegate.h */,
 				5A66A33C13BF4E6900DB7161 /* SallyAppDelegate.m */,
 				5A66A33E13BF4E6900DB7161 /* SallyViewController.h */,
@@ -236,6 +239,7 @@
 				5A66A34413BF4E6900DB7161 /* SallyViewController.xib in Resources */,
 				5A66A36513BF501C00DB7161 /* arrow.png in Resources */,
 				5AC94A0013BF50D50083EC1D /* arrow2.png in Resources */,
+				5AC94A0313BFA4B10083EC1D /* lock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

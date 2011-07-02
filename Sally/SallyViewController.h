@@ -15,6 +15,8 @@
   UITextField *_ab;
   UISlider *_aufSlider;
   UISlider *_abSlider;
+  UIButton *_ekLock;
+  UIButton *_vkLock;
 
   CGFloat animatedDistance;
 }
@@ -27,9 +29,15 @@
 @property (nonatomic, strong) IBOutlet UISlider *aufSlider;
 @property (nonatomic, strong) IBOutlet UISlider *abSlider;
 
+@property (nonatomic, strong) IBOutlet UIButton *ekLock;
+@property (nonatomic, strong) IBOutlet UIButton *vkLock;
+
 - (IBAction)aufschlagChanged:(id)sender;
 - (IBAction)abschlagChanged:(id)sender;
 - (IBAction)ekChanged:(id)sender;
 - (IBAction)vkChanged:(id)sender;
+
+- (IBAction)ekLockTapped:(id)sender;
+- (IBAction)vkLockTapped:(id)sender;
 
 @end
