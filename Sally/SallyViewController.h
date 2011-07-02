@@ -15,6 +15,8 @@
   UITextField *_ab;
   UISlider *_aufSlider;
   UISlider *_abSlider;
+
+  CGFloat animatedDistance;
 }
 
 
