@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A66A32D13BF4E6900DB7161 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A66A32C13BF4E6900DB7161 /* UIKit.framework */; };
+		5A66A32F13BF4E6900DB7161 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A66A32E13BF4E6900DB7161 /* Foundation.framework */; };
+		5A66A33113BF4E6900DB7161 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A66A33013BF4E6900DB7161 /* CoreGraphics.framework */; };
+		5A66A33713BF4E6900DB7161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A66A33513BF4E6900DB7161 /* InfoPlist.strings */; };
+		5A66A33913BF4E6900DB7161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A66A33813BF4E6900DB7161 /* main.m */; };
+		5A66A33D13BF4E6900DB7161 /* SallyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A66A33C13BF4E6900DB7161 /* SallyAppDelegate.m */; };
+		5A66A33F13BF4E6900DB7161 /* SallyViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 5A66A33E13BF4E6900DB7161 /* SallyViewController.h */; };
+		5A66A34113BF4E6900DB7161 /* SallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A66A34013BF4E6900DB7161 /* SallyViewController.m */; };
+		5A66A34413BF4E6900DB7161 /* SallyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A66A34213BF4E6900DB7161 /* SallyViewController.xib */; };
+		5A66A34C13BF4E6900DB7161 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A66A34B13BF4E6900DB7161 /* SenTestingKit.framework */; };
+		5A66A34D13BF4E6900DB7161 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A66A32C13BF4E6900DB7161 /* UIKit.framework */; };
+		5A66A34E13BF4E6900DB7161 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A66A32E13BF4E6900DB7161 /* Foundation.framework */; };
+		5A66A34F13BF4E6900DB7161 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A66A33013BF4E6900DB7161 /* CoreGraphics.framework */; };
+		5A66A35713BF4E6900DB7161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A66A35513BF4E6900DB7161 /* InfoPlist.strings */; };
+		5A66A35913BF4E6900DB7161 /* SallyTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5A66A35813BF4E6900DB7161 /* SallyTests.h */; };
+		5A66A35B13BF4E6900DB7161 /* SallyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A66A35A13BF4E6900DB7161 /* SallyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A66A35013BF4E6900DB7161 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A66A31F13BF4E6800DB7161 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A66A32713BF4E6900DB7161;
+			remoteInfo = Sally;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A66A32813BF4E6900DB7161 /* Sally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sally.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A66A32C13BF4E6900DB7161 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A66A32E13BF4E6900DB7161 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A66A33013BF4E6900DB7161 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A66A33413BF4E6900DB7161 /* Sally-Info.plist */ = {isa = PBXFileReference; path = "Sally-Info.plist"; sourceTree = "<group>"; };
+		5A66A33613BF4E6900DB7161 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A66A33813BF4E6900DB7161 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A66A33A13BF4E6900DB7161 /* Sally-Prefix.pch */ = {isa = PBXFileReference; path = "Sally-Prefix.pch"; sourceTree = "<group>"; };
+		5A66A33B13BF4E6900DB7161 /* SallyAppDelegate.h */ = {isa = PBXFileReference; path = SallyAppDelegate.h; sourceTree = "<group>"; };
+		5A66A33C13BF4E6900DB7161 /* SallyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SallyAppDelegate.m; sourceTree = "<group>"; };
+		5A66A33E13BF4E6900DB7161 /* SallyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SallyViewController.h; sourceTree = "<group>"; };
+		5A66A34013BF4E6900DB7161 /* SallyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SallyViewController.m; sourceTree = "<group>"; };
+		5A66A34313BF4E6900DB7161 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SallyViewController.xib; sourceTree = "<group>"; };
+		5A66A34A13BF4E6900DB7161 /* SallyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SallyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A66A34B13BF4E6900DB7161 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5A66A35413BF4E6900DB7161 /* SallyTests-Info.plist */ = {isa = PBXFileReference; path = "SallyTests-Info.plist"; sourceTree = "<group>"; };
+		5A66A35613BF4E6900DB7161 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A66A35813BF4E6900DB7161 /* SallyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SallyTests.h; sourceTree = "<group>"; };
+		5A66A35A13BF4E6900DB7161 /* SallyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SallyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A66A32513BF4E6900DB7161 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A66A32D13BF4E6900DB7161 /* UIKit.framework in Frameworks */,
+				5A66A32F13BF4E6900DB7161 /* Foundation.framework in Frameworks */,
+				5A66A33113BF4E6900DB7161 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A66A34613BF4E6900DB7161 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A66A34C13BF4E6900DB7161 /* SenTestingKit.framework in Frameworks */,
+				5A66A34D13BF4E6900DB7161 /* UIKit.framework in Frameworks */,
+				5A66A34E13BF4E6900DB7161 /* Foundation.framework in Frameworks */,
+				5A66A34F13BF4E6900DB7161 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A66A31D13BF4E6800DB7161 = {
+			isa = PBXGroup;
+			children = (
+				5A66A33213BF4E6900DB7161 /* Sally */,
+				5A66A35213BF4E6900DB7161 /* SallyTests */,
+				5A66A32B13BF4E6900DB7161 /* Frameworks */,
+				5A66A32913BF4E6900DB7161 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A66A32913BF4E6900DB7161 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A66A32813BF4E6900DB7161 /* Sally.app */,
+				5A66A34A13BF4E6900DB7161 /* SallyTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A66A32B13BF4E6900DB7161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A66A32C13BF4E6900DB7161 /* UIKit.framework */,
+				5A66A32E13BF4E6900DB7161 /* Foundation.framework */,
+				5A66A33013BF4E6900DB7161 /* CoreGraphics.framework */,
+				5A66A34B13BF4E6900DB7161 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A66A33213BF4E6900DB7161 /* Sally */ = {
+			isa = PBXGroup;
+			children = (
+				5A66A33B13BF4E6900DB7161 /* SallyAppDelegate.h */,
+				5A66A33C13BF4E6900DB7161 /* SallyAppDelegate.m */,
+				5A66A33E13BF4E6900DB7161 /* SallyViewController.h */,
+				5A66A34013BF4E6900DB7161 /* SallyViewController.m */,
+				5A66A34213BF4E6900DB7161 /* SallyViewController.xib */,
+				5A66A33313BF4E6900DB7161 /* Supporting Files */,
+			);
+			path = Sally;
+			sourceTree = "<group>";
+		};
+		5A66A33313BF4E6900DB7161 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A66A33413BF4E6900DB7161 /* Sally-Info.plist */,
+				5A66A33513BF4E6900DB7161 /* InfoPlist.strings */,
+				5A66A33813BF4E6900DB7161 /* main.m */,
+				5A66A33A13BF4E6900DB7161 /* Sally-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A66A35213BF4E6900DB7161 /* SallyTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A66A35813BF4E6900DB7161 /* SallyTests.h */,
+				5A66A35A13BF4E6900DB7161 /* SallyTests.m */,
+				5A66A35313BF4E6900DB7161 /* Supporting Files */,
+			);
+			path = SallyTests;
+			sourceTree = "<group>";
+		};
+		5A66A35313BF4E6900DB7161 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A66A35413BF4E6900DB7161 /* SallyTests-Info.plist */,
+				5A66A35513BF4E6900DB7161 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A66A32713BF4E6900DB7161 /* Sally */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A66A35E13BF4E6900DB7161 /* Build configuration list for PBXNativeTarget "Sally" */;
+			buildPhases = (
+				5A66A32413BF4E6900DB7161 /* Sources */,
+				5A66A32513BF4E6900DB7161 /* Frameworks */,
+				5A66A32613BF4E6900DB7161 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sally;
+			productName = Sally;
+			productReference = 5A66A32813BF4E6900DB7161 /* Sally.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A66A34913BF4E6900DB7161 /* SallyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A66A36113BF4E6900DB7161 /* Build configuration list for PBXNativeTarget "SallyTests" */;
+			buildPhases = (
+				5A66A34513BF4E6900DB7161 /* Sources */,
+				5A66A34613BF4E6900DB7161 /* Frameworks */,
+				5A66A34713BF4E6900DB7161 /* Resources */,
+				5A66A34813BF4E6900DB7161 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A66A35113BF4E6900DB7161 /* PBXTargetDependency */,
+			);
+			name = SallyTests;
+			productName = SallyTests;
+			productReference = 5A66A34A13BF4E6900DB7161 /* SallyTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A66A31F13BF4E6800DB7161 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "abstracture GmbH & Co. KG";
+			};
+			buildConfigurationList = 5A66A32213BF4E6800DB7161 /* Build configuration list for PBXProject "Sally" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5A66A31D13BF4E6800DB7161;
+			productRefGroup = 5A66A32913BF4E6900DB7161 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A66A32713BF4E6900DB7161 /* Sally */,
+				5A66A34913BF4E6900DB7161 /* SallyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A66A32613BF4E6900DB7161 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A66A33713BF4E6900DB7161 /* InfoPlist.strings in Resources */,
+				5A66A33F13BF4E6900DB7161 /* SallyViewController.h in Resources */,
+				5A66A34413BF4E6900DB7161 /* SallyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A66A34713BF4E6900DB7161 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A66A35713BF4E6900DB7161 /* InfoPlist.strings in Resources */,
+				5A66A35913BF4E6900DB7161 /* SallyTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A66A34813BF4E6900DB7161 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A66A32413BF4E6900DB7161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A66A33913BF4E6900DB7161 /* main.m in Sources */,
+				5A66A33D13BF4E6900DB7161 /* SallyAppDelegate.m in Sources */,
+				5A66A34113BF4E6900DB7161 /* SallyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A66A34513BF4E6900DB7161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A66A35B13BF4E6900DB7161 /* SallyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A66A35113BF4E6900DB7161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A66A32713BF4E6900DB7161 /* Sally */;
+			targetProxy = 5A66A35013BF4E6900DB7161 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A66A33513BF4E6900DB7161 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A66A33613BF4E6900DB7161 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5A66A34213BF4E6900DB7161 /* SallyViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A66A34313BF4E6900DB7161 /* en */,
+			);
+			name = SallyViewController.xib;
+			sourceTree = "<group>";
+		};
+		5A66A35513BF4E6900DB7161 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A66A35613BF4E6900DB7161 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A66A35C13BF4E6900DB7161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A66A35D13BF4E6900DB7161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A66A35F13BF4E6900DB7161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sally/Sally-Prefix.pch";
+				INFOPLIST_FILE = "Sally/Sally-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5A66A36013BF4E6900DB7161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sally/Sally-Prefix.pch";
+				INFOPLIST_FILE = "Sally/Sally-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5A66A36213BF4E6900DB7161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sally.app/Sally";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sally/Sally-Prefix.pch";
+				INFOPLIST_FILE = "SallyTests/SallyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5A66A36313BF4E6900DB7161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sally.app/Sally";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sally/Sally-Prefix.pch";
+				INFOPLIST_FILE = "SallyTests/SallyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A66A32213BF4E6800DB7161 /* Build configuration list for PBXProject "Sally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A66A35C13BF4E6900DB7161 /* Debug */,
+				5A66A35D13BF4E6900DB7161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A66A35E13BF4E6900DB7161 /* Build configuration list for PBXNativeTarget "Sally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A66A35F13BF4E6900DB7161 /* Debug */,
+				5A66A36013BF4E6900DB7161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A66A36113BF4E6900DB7161 /* Build configuration list for PBXNativeTarget "SallyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A66A36213BF4E6900DB7161 /* Debug */,
+				5A66A36313BF4E6900DB7161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A66A31F13BF4E6800DB7161 /* Project object */;
+}
