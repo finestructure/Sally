@@ -16,6 +16,8 @@
 @synthesize aufSlider = _aufSlider;
 @synthesize abSlider = _abSlider;
 
+static NSNumberFormatter *formatter = nil;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -27,12 +29,19 @@
 
 - (void)viewDidLoad
 {
+  if (formatter == nil) {
+    formatter = [[NSNumberFormatter alloc] init];
+    [formatter setAlwaysShowsDecimalSeparator:YES];
+    [formatter setMinimumFractionDigits:2];
+    [formatter setMaximumFractionDigits:2];
+  }
+
   [super viewDidLoad];
-  self.ek.text = @"1000.00";
-  self.vk.text = @"1000.00";
-  self.auf.text = @"2.00";
+  self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:1000]];;
+  self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:1000]];
+  self.auf.text = [formatter stringFromNumber:[NSNumber numberWithFloat:2]];
   self.aufSlider.value = 2;
-  self.ab.text = @"0.50";
+  self.ab.text = [formatter stringFromNumber:[NSNumber numberWithFloat:0.5]];
   self.abSlider.value = 0.5;
 }
 
@@ -75,36 +84,36 @@
 
 - (IBAction)aufschlagChanged:(id)sender {
   float auf = self.aufSlider.value;
-  self.auf.text = [[NSNumber numberWithFloat:auf] stringValue];
+  self.auf.text = [formatter stringFromNumber:[NSNumber numberWithFloat:auf]];
   float ek = [self.ek.text floatValue];
   float vk = ek * auf;
   float ab = 1 - ek/vk;
-  self.vk.text = [[NSNumber numberWithFloat:vk] stringValue];
-  self.ab.text = [[NSNumber numberWithFloat:ab] stringValue];
+  self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:vk]];
+  self.ab.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ab]];
 }
 
 - (IBAction)abschlagChanged:(id)sender {
   float ab = self.abSlider.value;
-  self.ab.text = [[NSNumber numberWithFloat:ab] stringValue];
+  self.ab.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ab]];
   float vk = [self.vk.text floatValue];
   float auf = 1/(1 - ab);
   float ek = vk / auf;
-  self.ek.text = [[NSNumber numberWithFloat:ek] stringValue];
-  self.auf.text = [[NSNumber numberWithFloat:auf] stringValue];
+  self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ek]];
+  self.auf.text = [formatter stringFromNumber:[NSNumber numberWithFloat:auf]];
 }
 
 - (IBAction)ekChanged:(id)sender {
   float ek = [self.ek.text floatValue];
   float auf = [self.auf.text floatValue];
   float vk = ek * auf;
-  self.vk.text = [[NSNumber numberWithFloat:vk] stringValue];
+  self.vk.text = [formatter stringFromNumber:[NSNumber numberWithFloat:vk]];
 }
 
 - (IBAction)vkChanged:(id)sender {
   float auf = [self.auf.text floatValue];
   float vk = [self.vk.text floatValue];
   float ek = vk / auf;
-  self.ek.text = [[NSNumber numberWithFloat:ek] stringValue];
+  self.ek.text = [formatter stringFromNumber:[NSNumber numberWithFloat:ek]];
 }
 
 @end
